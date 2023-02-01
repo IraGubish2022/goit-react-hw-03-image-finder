@@ -34,7 +34,7 @@ export class App extends Component {
         .finally(() => this.setState({ isLoading: false }));
     }
   }
-  
+
   handleFormSubmit = query => {
     this.setState({
       query,

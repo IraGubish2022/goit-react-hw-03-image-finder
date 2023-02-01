@@ -6,12 +6,12 @@ export const ImageGallery = ({ images }) => {
   return (
     <ul className={styles.gallery}>
       {images.map(({ id, webformatURL, largeImageURL, tags }) => (
-         <ImageGalleryItem 
-         webformatURL={webformatURL} 
-         key={id} 
-         largeImageURL={largeImageURL}
-         tags={tags}
-         />
+        <ImageGalleryItem
+          webformatURL={webformatURL}
+          key={id}
+          largeImageURL={largeImageURL}
+          tags={tags}
+        />
       ))}
     </ul>
   );

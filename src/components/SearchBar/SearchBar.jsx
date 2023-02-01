@@ -26,12 +26,12 @@ export class SearchBar extends Component {
     this.props.onSubmit(this.state.imageName);
     this.setState({ imageName: '' });
   };
-render() {
-  return (
-    <header className={styles.searchBar}>
-      <form className={styles.form} onSubmit={this.handleSubmit}>
-        <button type="submit" className={styles.button}>
-        <IconContext.Provider
+  render() {
+    return (
+      <header className={styles.searchBar}>
+        <form className={styles.form} onSubmit={this.handleSubmit}>
+          <button type="submit" className={styles.button}>
+            <IconContext.Provider
               value={{
                 color: 'blue',
                 size: '3em',
@@ -41,8 +41,8 @@ render() {
               <div>
                 <BiSearchAlt />
               </div>
-            </IconContext.Provider>;
-            <span className={styles.buttonLabel}>Search</span>
+            </IconContext.Provider>
+            ;<span className={styles.buttonLabel}>Search</span>
           </button>
 
           <input
@@ -56,8 +56,8 @@ render() {
           />
         </form>
         <Toaster position="top-right" />
-    </header>
-  );
+      </header>
+    );
+  }
 }
-};
 //export default SearchBar;
